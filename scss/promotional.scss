@@ -1,0 +1,24 @@
+.promotional{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+    
+    .promotional-links{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+        img{
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}
+@media only screen and (max-width: 425px){
+    .promotional{
+        .promotional-links{
+            flex-direction: column;
+        }
+    }
+}

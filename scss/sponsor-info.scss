@@ -1,0 +1,39 @@
+.sponsor-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fff;
+
+    .sponsor-image{
+        img{
+            width: 100%;
+        }
+    }
+
+    .sponsorship{
+        width: 75%;
+        h2{
+            font-size: 24px;
+            margin-bottom: 0px;
+        }
+        p{
+            text-align: left;
+        }
+        h5{
+            text-align: right;
+            margin-right: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .sponsor-info{
+        flex-direction: column;
+        .sponsorship{
+            width: 100%;
+        }
+    }
+    
+}

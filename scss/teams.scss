@@ -1,0 +1,84 @@
+.teams{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+    .team-row{
+        width: 100%;
+        display: flex;
+
+        .team{
+            width: 33%;
+            margin: 2px;
+
+            .team-image{
+                height: 580px;
+                width: 100%;
+                position: relative;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                img{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            .team-text{
+                min-height: 75px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                p{
+                    width: 100%;
+                    font-size: 20px;
+                    text-align: center;
+                    margin: 0;
+                    font-weight: 100;
+                }
+            }
+        }
+
+        #enemy{
+            .team-image{
+                background-image: url("../images/enemy_team.png");
+            }
+            .team-text{
+                background-color: #990500;
+            }
+        }
+        #arboreal{
+            .team-image{
+                background-image: url("../images/arboreal_team.png");
+            }
+            .team-text{
+                background-color: #466D3C;
+            }
+
+        }
+        #kinetic{
+            .team-image{
+                background-image: url("../images/kinetic_team.png");
+            }
+            .team-text{
+                background-color: #336699;
+            }
+        }
+
+        
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .teams{
+        .team-row{
+            flex-direction: column;
+            .team{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

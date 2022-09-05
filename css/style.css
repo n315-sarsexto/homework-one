@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.wrapper {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 25px;
+}
+.content h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 34px;
+}
+.content p {
+  font-size: 20px;
+  width: 75%;
+  margin: 0 auto;
+  text-align: justify;
+  font-weight: 300;
+}
+.content a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .content {
+    width: 100%;
+  }
+}
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+.navbar img {
+  width: 80%;
+}
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 25px;
+}
+
+.video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.promotional {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+.promotional .promotional-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.promotional .promotional-links img {
+  width: 100%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  .promotional .promotional-links {
+    flex-direction: column;
+  }
+}
+.teams {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.teams .team-row {
+  width: 100%;
+  display: flex;
+}
+.teams .team-row .team {
+  width: 33%;
+  margin: 2px;
+}
+.teams .team-row .team .team-image {
+  height: 580px;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.teams .team-row .team .team-image img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.teams .team-row .team .team-text {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teams .team-row .team .team-text p {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+}
+.teams .team-row #enemy .team-image {
+  background-image: url("../images/enemy_team.png");
+}
+.teams .team-row #enemy .team-text {
+  background-color: #990500;
+}
+.teams .team-row #arboreal .team-image {
+  background-image: url("../images/arboreal_team.png");
+}
+.teams .team-row #arboreal .team-text {
+  background-color: #466D3C;
+}
+.teams .team-row #kinetic .team-image {
+  background-image: url("../images/kinetic_team.png");
+}
+.teams .team-row #kinetic .team-text {
+  background-color: #336699;
+}
+
+@media only screen and (max-width: 425px) {
+  .teams .team-row {
+    flex-direction: column;
+  }
+  .teams .team-row .team {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+footer {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+footer h1 {
+  padding: 50px;
+}
+footer .developers-partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .developers-partners img {
+  width: 100%;
+  padding: 10px;
+}
+footer h6 {
+  margin: 50px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 425px) {
+  footer .developers-partners {
+    flex-direction: column;
+  }
+}
+.sponsor-header {
+  margin-top: 30px;
+}
+.sponsor-header h1 {
+  font-size: 36px;
+}
+
+.sponsor-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #fff;
+}
+.sponsor-info .sponsor-image img {
+  width: 100%;
+}
+.sponsor-info .sponsorship {
+  width: 75%;
+}
+.sponsor-info .sponsorship h2 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.sponsor-info .sponsorship p {
+  text-align: left;
+}
+.sponsor-info .sponsorship h5 {
+  text-align: right;
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 425px) {
+  .sponsor-info {
+    flex-direction: column;
+  }
+  .sponsor-info .sponsorship {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

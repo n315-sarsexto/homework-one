@@ -1,0 +1,29 @@
+footer{
+    width: 100%;
+    border-top: 1px solid #fff;
+
+    h1{
+        padding: 50px;
+    }
+    .developers-partners{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img{
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    h6{
+        margin: 50px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 425px){
+    footer{
+        .developers-partners{
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.content{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 25px;
+
+    h1{
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 34px;
+    }
+    p{
+        font-size: 20px;
+        width: 75%;
+        margin: 0 auto;
+        text-align: justify;
+        font-weight: 300;
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .content{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 425px){
+    .content{
+        width: 100%;
+    }
+}
